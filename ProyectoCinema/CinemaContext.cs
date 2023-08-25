@@ -46,12 +46,15 @@ namespace ProyectoCinema
 
             // Carga de datos iniciales
             LoadData(modelBuilder);
+            SaveChanges();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=CineDB;Trusted_Connection=True;TrustServerCertificate=True");
         }
+
+
 
         // Método para cargar datos iniciales
         private void LoadData(ModelBuilder modelBuilder)
@@ -106,6 +109,7 @@ namespace ProyectoCinema
             //);
 
             // Más datos de ejemplo aquí...
+
         }
     }
 }

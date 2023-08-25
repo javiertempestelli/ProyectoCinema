@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Jc5JWJLWnYbK9ZteVkBRmNVsfuYxoGtY41fOe2Dtb+b3F+JjujSRSRhtPqPwBhO+WlKq/n+FiSQHp4ZWO87NTA==",
+  "dgSpecHash": "dkNjrvMarw4bPOdMsr/ipW2ut0/xRPtx8scq3ZJMW91SS7UQo44bg31wS/h49SvSdud5nzbXjmsPUevp4xWAbA==",
   "success": true,
   "projectFilePath": "C:\\Users\\jtempestelli\\source\\repos\\ProyectoCinema\\ProyectoCinema\\ProyectoCinema.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "C:\\Users\\jtempestelli\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.10\\microsoft.entityframeworkcore.tools.7.0.10.nupkg.sha512",
     "C:\\Users\\jtempestelli\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\jtempestelli\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "C:\\Users\\jtempestelli\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\jtempestelli\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\jtempestelli\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\jtempestelli\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
