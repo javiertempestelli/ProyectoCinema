@@ -67,7 +67,7 @@ namespace ProyectoCinema
                 // Agrega más salas aquí...
             );
 
-            //// Carga de datos de ejemplo para otras entidades si es necesario
+            //// Carga de datos de generos
 
             //modelBuilder.Entity<Genero>().HasData(
             //    new Genero { GeneroId = 1, Nombre = "Acción" },
@@ -82,6 +82,8 @@ namespace ProyectoCinema
             //    new Genero { GeneroId = 10, Nombre = "Terror" }
             //// Agrega más géneros aquí...
             //);
+
+            //Cargar las peliculas de la cartelera
 
             //modelBuilder.Entity<Pelicula>().HasData(
             //    new Pelicula { PeliculaId = 1,  Titulo = "	Mad Max: Furia en el Camino	"   , GeneroId = 1, Sonopsis = "	Caos postapocalíptico en busca de libertad.	", Poster = "	https://m.media-amazon.com/images/M/MV5BYzg1N2E1M2YtYTA4Ny00NDY2LWI5ZDEtYjg3YWNmZWRmZmJhXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_FMjpg_UX1200_.jpg	", Trailer = "	https://youtu.be/hEJnMQG9ev8?si=o4s7L-Mt6N3wkssF	" },

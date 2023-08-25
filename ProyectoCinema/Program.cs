@@ -4,10 +4,14 @@ using Microsoft.Extensions.Options;
 using ProyectoCinema;
 using Microsoft.EntityFrameworkCore;
 
-class Program
-{
-    static void Main(string[] args)
+namespace ProyectoCinema 
+{ 
+    public class Program
     {
-     
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hola");
+        }
     }
+
 }
