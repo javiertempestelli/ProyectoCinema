@@ -16,7 +16,7 @@ namespace ProyectoCinema
 
         public DateTime Horario { get; set; }
 
-        public Ticket Ticket { get; set; }
+        public ICollection<Ticket> Tickets { get; set; }
 
         public Pelicula Pelicula { get; set; }
     }

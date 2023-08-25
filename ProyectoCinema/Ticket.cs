@@ -11,8 +11,7 @@ namespace ProyectoCinema
     {
         public Guid TicketId { get; set; }
         public string Usuario { get; set; } 
-
-        public ICollection<Funcion> Funciones { get; set; }
+        public Funcion Funcion { get; set; }
 
 
     }

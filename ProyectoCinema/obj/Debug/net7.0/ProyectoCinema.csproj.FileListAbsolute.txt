@@ -66,3 +66,17 @@ C:\Users\jtempestelli\source\repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.
 C:\Users\jtempestelli\source\repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\ProyectoCinema.pdb
 C:\Users\jtempestelli\source\repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\ProyectoCinema.genruntimeconfig.cache
 C:\Users\jtempestelli\source\repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\ref\ProyectoCinema.dll
+C:\Users\jtempestelli\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\EntityFramework.SqlServer.dll
+C:\Users\jtempestelli\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\EntityFramework.dll
+C:\Users\jtempestelli\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\System.Data.SqlClient.dll
+C:\Users\jtempestelli\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+C:\Users\jtempestelli\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+C:\Users\jtempestelli\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+C:\Users\jtempestelli\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\jtempestelli\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\jtempestelli\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\Microsoft.Extensions.Configuration.dll
+C:\Users\jtempestelli\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\jtempestelli\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\jtempestelli\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\jtempestelli\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\jtempestelli\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
