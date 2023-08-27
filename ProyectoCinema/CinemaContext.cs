@@ -46,7 +46,6 @@ namespace ProyectoCinema
 
             // Carga de datos iniciales
             LoadData(modelBuilder);
-            SaveChanges();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -64,9 +63,8 @@ namespace ProyectoCinema
                 new Sala { SalaId = 1, Nombre = "Sala 1", Capacidad = 5 },
                 new Sala { SalaId = 2, Nombre = "Sala 2", Capacidad = 15 },
                 new Sala { SalaId = 3, Nombre = "Sala 2", Capacidad = 35 }
-                // Agrega más salas aquí...
             );
-
+            SaveChanges();
             //// Carga de datos de generos
 
             //modelBuilder.Entity<Genero>().HasData(
