@@ -4091,24 +4091,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jtempestelli\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Javi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jtempestelli\\source\\repos\\ProyectoCinema\\ProyectoCinema\\ProyectoCinema.csproj",
+      "projectUniqueName": "C:\\Users\\Javi\\source\\repos\\ProyectoCinema\\ProyectoCinema\\ProyectoCinema.csproj",
       "projectName": "ProyectoCinema",
-      "projectPath": "C:\\Users\\jtempestelli\\source\\repos\\ProyectoCinema\\ProyectoCinema\\ProyectoCinema.csproj",
-      "packagesPath": "C:\\Users\\jtempestelli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jtempestelli\\source\\repos\\ProyectoCinema\\ProyectoCinema\\obj\\",
+      "projectPath": "C:\\Users\\Javi\\source\\repos\\ProyectoCinema\\ProyectoCinema\\ProyectoCinema.csproj",
+      "packagesPath": "C:\\Users\\Javi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Javi\\source\\repos\\ProyectoCinema\\ProyectoCinema\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\jtempestelli\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Javi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
