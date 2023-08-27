@@ -10,6 +10,7 @@ namespace ProyectoCinema
     {
         public int GeneroId { get; set; }
         public string Nombre { get; set; }
+        public Genero() { }
 
         public ICollection<Pelicula> Peliculas { get; set;}
     }
