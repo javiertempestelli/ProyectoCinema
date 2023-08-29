@@ -1,4 +1,15 @@
+<<<<<<< Updated upstream
 ﻿using ProyectoCinema;
+=======
+<<<<<<< HEAD
+﻿using Microsoft.EntityFrameworkCore;
+Console.WriteLine("Hello World");
+=======
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
+using ProyectoCinema;
+>>>>>>> Stashed changes
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 using Microsoft.Extensions.Configuration;
@@ -238,4 +249,10 @@ namespace ProyectoCinema
 
         }
     }
+<<<<<<< Updated upstream
 }
+=======
+
+}
+>>>>>>> 454a8e4ca58485ea47d86b894da778acdabdce9e
+>>>>>>> Stashed changes

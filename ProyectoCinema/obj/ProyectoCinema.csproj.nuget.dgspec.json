@@ -40,6 +40,20 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+>>>>>>> 454a8e4ca58485ea47d86b894da778acdabdce9e
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+>>>>>>> Stashed changes
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.10, )"
