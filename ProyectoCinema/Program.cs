@@ -82,7 +82,7 @@ namespace ProyectoCinema
                 context.Generos.Add(gener10);
                 Console.WriteLine("Se agregaron los Generos");
 
-                context.SaveChanges();
+ //               context.SaveChanges();
 
                 Console.WriteLine("Se guardaron los Generos");
                 context.Peliculas.Add(peli01);
@@ -105,7 +105,7 @@ namespace ProyectoCinema
                 context.Peliculas.Add(peli18);
                 context.Peliculas.Add(peli19);
                 context.Peliculas.Add(peli20);
-                context.SaveChanges();
+ //               context.SaveChanges();
                 context.Salas.Add(sala01);
                 context.Salas.Add(sala02);
                 context.Salas.Add(sala03);
