@@ -5,7 +5,7 @@
 namespace ProyectoCinema.Migrations
 {
     /// <inheritdoc />
-    public partial class CreateDBOnSQLServer : Migration
+    public partial class CreateDB : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

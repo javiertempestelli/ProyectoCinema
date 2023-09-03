@@ -8,6 +8,14 @@
     ".NETCoreApp,Version=v7.0": {
       "ProyectoCinema/1.0.0": {
         "dependencies": {
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+          "EntityFramework": "6.4.4",
+>>>>>>> 454a8e4ca58485ea47d86b894da778acdabdce9e
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.10",
+>>>>>>> Stashed changes
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.10",

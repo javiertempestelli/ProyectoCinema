@@ -1,4 +1,15 @@
+<<<<<<< Updated upstream
 ﻿using ProyectoCinema;
+=======
+<<<<<<< HEAD
+﻿using Microsoft.EntityFrameworkCore;
+Console.WriteLine("Hello World");
+=======
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
+using ProyectoCinema;
+>>>>>>> Stashed changes
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 using Microsoft.Extensions.Configuration;
@@ -56,8 +67,8 @@ namespace ProyectoCinema
                 var peli16 = new Pelicula() { Titulo = "Moulin Rouge", GeneroId = 8, Poster = "img16.jpg", Sonopsis = "Bohemia y amor en París", Trailer = "trailer16.mp4" };
                 var peli17 = new Pelicula() { Titulo = "El Sexto Sentido", GeneroId = 9, Poster = "img17.jpg", Sonopsis = "Niño ve muertos, busca respuestas", Trailer = "trailer17.mp4" };
                 var peli18 = new Pelicula() { Titulo = "Perdida", GeneroId = 9, Poster = "img18.jpg", Sonopsis = "Intriga racial en suburbios estadounidenses", Trailer = "trailer18.mp4" };
-                var peli19 = new Pelicula() { Titulo = "El Exorcista", GeneroId = 10, Poster = "img19.jpg", Sonopsis = "Poseída por demonio, exorcismo necesario", Trailer = "trailer19.mp4" };
-                var peli20 = new Pelicula() { Titulo = "¡Huye!", GeneroId = 10, Poster = "img20.jpg", Sonopsis = "Lucha por escapar de hechos tenebrosos", Trailer = "trailer20.mp4" };
+                var peli19 = new Pelicula() { Titulo = "El Exorcista", GeneroId = 0, Poster = "img19.jpg", Sonopsis = "Poseída por demonio, exorcismo necesario", Trailer = "trailer19.mp4" };
+                var peli20 = new Pelicula() { Titulo = "¡Huye!", GeneroId = 0, Poster = "img20.jpg", Sonopsis = "Lucha por escapar de hechos tenebrosos", Trailer = "trailer20.mp4" };
                 // ... Repite el patrón para las demás películas
 
                 Console.WriteLine("Se crean las instancias de las Salas");
@@ -238,4 +249,10 @@ namespace ProyectoCinema
 
         }
     }
+<<<<<<< Updated upstream
 }
+=======
+
+}
+>>>>>>> 454a8e4ca58485ea47d86b894da778acdabdce9e
+>>>>>>> Stashed changes
