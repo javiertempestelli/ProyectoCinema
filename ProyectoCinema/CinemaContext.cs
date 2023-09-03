@@ -51,7 +51,7 @@ namespace ProyectoCinema
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost;Database=CineDB;Trusted_Connection=True;TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=CineDB;Trusted_Connection=True;TrustServerCertificate=True");
         }
 
     }
