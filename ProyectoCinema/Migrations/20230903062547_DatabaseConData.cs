@@ -12,23 +12,84 @@ namespace ProyectoCinema.Migrations
         {
 
 
-     //       migrationBuilder.CreateTable(
-     //       name: "Generos",
-     //       columns: table => new
-     //{
-     //        GeneroId = table.Column<int>(type: "int", nullable: false)
-     //            .Annotation("SqlServer:Identity", "1, 1"),
-     //                         Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false)
-     //},
-     //constraints: table =>
-     //{
-     //    table.PrimaryKey("PK_Generos", x => x.GeneroId);
-     //});
+            //       migrationBuilder.CreateTable(
+            //       name: "Generos",
+            //       columns: table => new
+            //{
+            //        GeneroId = table.Column<int>(type: "int", nullable: false)
+            //            .Annotation("SqlServer:Identity", "1, 1"),
+            //                         Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false)
+            //},
+            //constraints: table =>
+            //{
+            //    table.PrimaryKey("PK_Generos", x => x.GeneroId);
+            //});
 
             migrationBuilder.InsertData(
                 table: "Generos",
                 columns: new[] { "Nombre" },
                 values: new object[] { "Acción" });
+
+
+            migrationBuilder.InsertData(
+                table: "Generos",
+                columns: new[] { "Nombre" },
+                values: new object[] { "Aventuras" });
+
+
+            migrationBuilder.InsertData(
+                table: "Generos",
+                columns: new[] { "Nombre" },
+                values: new object[] { "Ciencia Ficcion" });
+
+
+            migrationBuilder.InsertData(
+                table: "Generos",
+                columns: new[] { "Nombre" },
+                values: new object[] { "Comedia" });
+
+
+            migrationBuilder.InsertData(
+                table: "Generos",
+                columns: new[] { "Nombre" },
+                values: new object[] { "Documental" });
+
+
+            migrationBuilder.InsertData(
+                table: "Generos",
+                columns: new[] { "Nombre" },
+                values: new object[] { "Drama" });
+
+
+            migrationBuilder.InsertData(
+                table: "Generos",
+                columns: new[] { "Nombre" },
+                values: new object[] { "Fantasía" });
+
+
+            migrationBuilder.InsertData(
+                table: "Generos",
+                columns: new[] { "Nombre" },
+                values: new object[] { "Musical" });
+
+
+            migrationBuilder.InsertData(
+                table: "Generos",
+                columns: new[] { "Nombre" },
+                values: new object[] { "Suspenso" });
+
+
+            migrationBuilder.InsertData(
+                table: "Generos",
+                columns: new[] { "Nombre" },
+                values: new object[] { "Terror" });
+
+
+            migrationBuilder.InsertData(
+                table: "Generos",
+                columns: new[] { "Nombre" },
+                values: new object[] { "Documental" });
+
 
 
             // Crea nuevas filas en la tabla 'Salas'
@@ -40,7 +101,7 @@ namespace ProyectoCinema.Migrations
             migrationBuilder.InsertData(
                 table: "Salas",
                 columns: new[] { "Nombre", "Capacidad" },
-                values: new object[] { "Sala 2", 10 });
+                values: new object[] { "Sala 2", 15 });
 
             migrationBuilder.InsertData(
                 table: "Salas",
