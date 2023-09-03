@@ -13,6 +13,6 @@ namespace ProyectoCinema
         public string Nombre { get; set; }
         public Genero() { }
 
-        public ICollection<Pelicula> Peliculas { get; set;}
+        public ICollection<Pelicula> Peliculas { get; set; }
     }
 }
