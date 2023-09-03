@@ -35,6 +35,13 @@ namespace ProyectoCinema
                     {
                         case '1':
                             Console.WriteLine("Acá vamos a tirar un prompt");
+                            var peliculasAccion = context.Peliculas
+                                .Where(p => p.Genero.Nombre == "Acción")
+                                .ToList();
+
+                            Console.WriteLine(peliculasAccion.Count);
+                            
+
                             break;
 
                         case '2':

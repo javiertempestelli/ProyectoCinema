@@ -405,7 +405,7 @@ namespace ProyectoCinema.Migrations
         }
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-
+            //Eliminar tabla al salid o vaciarla
         }
     }
 }
