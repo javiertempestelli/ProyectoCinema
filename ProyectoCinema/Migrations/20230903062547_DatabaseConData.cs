@@ -10,21 +10,6 @@ namespace ProyectoCinema.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-
-
-            //       migrationBuilder.CreateTable(
-            //       name: "Generos",
-            //       columns: table => new
-            //{
-            //        GeneroId = table.Column<int>(type: "int", nullable: false)
-            //            .Annotation("SqlServer:Identity", "1, 1"),
-            //                         Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false)
-            //},
-            //constraints: table =>
-            //{
-            //    table.PrimaryKey("PK_Generos", x => x.GeneroId);
-            //});
-
             migrationBuilder.InsertData(
                 table: "Generos",
                 columns: new[] { "Nombre" },
