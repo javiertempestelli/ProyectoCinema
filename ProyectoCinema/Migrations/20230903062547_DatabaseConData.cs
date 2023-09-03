@@ -11,6 +11,7 @@ namespace ProyectoCinema.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
 
+            // Se crea la tabla GENEROS
 
             migrationBuilder.CreateTable(
             name: "Generos",
@@ -24,6 +25,9 @@ namespace ProyectoCinema.Migrations
              {
                  table.PrimaryKey("PK_Generos", x => x.GeneroId);
              });
+
+
+            // Se crea la tabla SALAS
 
             migrationBuilder.CreateTable(
                 name: "Salas",
@@ -39,6 +43,8 @@ namespace ProyectoCinema.Migrations
                     table.PrimaryKey("PK_Salas", x => x.SalaId);
                 });
 
+            // Se crea la tabla PELICULAS
+
             migrationBuilder.CreateTable(
                 name: "Peliculas",
                 columns: table => new
@@ -51,6 +57,7 @@ namespace ProyectoCinema.Migrations
                     Trailer = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     GeneroId = table.Column<int>(type: "int", nullable: false)
                 },
+                //Se vincula la FK
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Peliculas", x => x.PeliculaId);
@@ -61,7 +68,7 @@ namespace ProyectoCinema.Migrations
                         principalColumn: "GeneroId",
                         onDelete: ReferentialAction.Cascade);
                 });
-
+            // Se crea la tabla FUNCIONES
             migrationBuilder.CreateTable(
                 name: "Funciones",
                 columns: table => new
@@ -73,6 +80,8 @@ namespace ProyectoCinema.Migrations
                     SalaId = table.Column<int>(type: "int", nullable: false),
                     PeliculaId = table.Column<int>(type: "int", nullable: false)
                 },
+
+                //Se vinculan las FK de FUNCIONES -> SALA; FUNCIONES -> PELICULA
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Funciones", x => x.FuncionId);
@@ -89,7 +98,8 @@ namespace ProyectoCinema.Migrations
                         principalColumn: "SalaId",
                         onDelete: ReferentialAction.Cascade);
                 });
-
+            
+            // Se crea la tabla TICKETS
             migrationBuilder.CreateTable(
                 name: "Tickets",
                 columns: table => new
@@ -98,6 +108,8 @@ namespace ProyectoCinema.Migrations
                     Usuario = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     FuncionId = table.Column<int>(type: "int", nullable: false)
                 },
+
+                //Se vincula la FK de TICKETS -> FUNCION
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Tickets", x => x.TicketId);
@@ -108,6 +120,8 @@ namespace ProyectoCinema.Migrations
                         principalColumn: "FuncionId",
                         onDelete: ReferentialAction.Cascade);
                 });
+
+            // Se crean las relaciones entre las tablas
 
             migrationBuilder.CreateIndex(
                 name: "IX_Funciones_PeliculaId",
@@ -129,7 +143,7 @@ namespace ProyectoCinema.Migrations
                 table: "Tickets",
                 column: "FuncionId");
 
-
+            // Se crean los Generos de las peliculas
             migrationBuilder.InsertData(
                 table: "Generos",
                 columns: new[] { "Nombre" },
@@ -189,7 +203,7 @@ namespace ProyectoCinema.Migrations
                 columns: new[] { "Nombre" },
                 values: new object[] { "Terror" });
 
-            // Crea nuevas filas en la tabla 'Salas'
+            // Se crean las 3 Salas en el Cine
             migrationBuilder.InsertData(
                 table: "Salas",
                 columns: new[] { "Nombre", "Capacidad" },
@@ -205,7 +219,8 @@ namespace ProyectoCinema.Migrations
                 columns: new[] { "Nombre", "Capacidad" },
                 values: new object[] { "Sala 3", 35 });
 
-            // Crea una nueva fila en la tabla 'Peliculas'
+            // Se insertan las 20 peliculas 
+
             migrationBuilder.InsertData(
                 table: "Peliculas",
                 columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
