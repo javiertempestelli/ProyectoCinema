@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
+
 =======
     <Compile Remove="DataLoading\**" />
     <Compile Remove="Funcionalidades\**" />
@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-<<<<<<< Updated upstream
+
 =======
     <PackageReference Include="EntityFramework" Version="6.4.4" />
 >>>>>>> 454a8e4ca58485ea47d86b894da778acdabdce9e
