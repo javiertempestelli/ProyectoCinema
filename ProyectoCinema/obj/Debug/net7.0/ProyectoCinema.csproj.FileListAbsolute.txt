@@ -152,3 +152,8 @@ C:\Users\Javi\Source\Repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\Proyec
 C:\Users\Javi\Source\Repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\ProyectoCinema.genruntimeconfig.cache
 C:\Users\Javi\Source\Repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\ref\ProyectoCinema.dll
 C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
