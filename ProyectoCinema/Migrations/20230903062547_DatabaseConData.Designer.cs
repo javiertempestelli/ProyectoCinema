@@ -12,8 +12,8 @@ using ProyectoCinema;
 namespace ProyectoCinema.Migrations
 {
     [DbContext(typeof(CinemaContext))]
-    [Migration("20230825175342_CreateDB")]
-    partial class CreateDB
+    [Migration("20230903062547_DatabaseConData")]
+    partial class DatabaseConData
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -45,16 +45,11 @@ namespace ProyectoCinema.Migrations
                     b.Property<int>("SalaId")
                         .HasColumnType("int");
 
-                    b.Property<Guid>("TicketId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("FuncionId");
 
                     b.HasIndex("PeliculaId");
 
                     b.HasIndex("SalaId");
-
-                    b.HasIndex("TicketId");
 
                     b.ToTable("Funciones");
                 });
@@ -136,11 +131,16 @@ namespace ProyectoCinema.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<int>("FuncionId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Usuario")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("TicketId");
+
+                    b.HasIndex("FuncionId");
 
                     b.ToTable("Tickets");
                 });
@@ -159,17 +159,9 @@ namespace ProyectoCinema.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ProyectoCinema.Ticket", "Ticket")
-                        .WithMany("Funciones")
-                        .HasForeignKey("TicketId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Pelicula");
 
                     b.Navigation("Sala");
-
-                    b.Navigation("Ticket");
                 });
 
             modelBuilder.Entity("ProyectoCinema.Pelicula", b =>
@@ -183,6 +175,22 @@ namespace ProyectoCinema.Migrations
                     b.Navigation("Genero");
                 });
 
+            modelBuilder.Entity("ProyectoCinema.Ticket", b =>
+                {
+                    b.HasOne("ProyectoCinema.Funcion", "Funcion")
+                        .WithMany("Tickets")
+                        .HasForeignKey("FuncionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Funcion");
+                });
+
+            modelBuilder.Entity("ProyectoCinema.Funcion", b =>
+                {
+                    b.Navigation("Tickets");
+                });
+
             modelBuilder.Entity("ProyectoCinema.Genero", b =>
                 {
                     b.Navigation("Peliculas");
@@ -194,11 +202,6 @@ namespace ProyectoCinema.Migrations
                 });
 
             modelBuilder.Entity("ProyectoCinema.Sala", b =>
-                {
-                    b.Navigation("Funciones");
-                });
-
-            modelBuilder.Entity("ProyectoCinema.Ticket", b =>
                 {
                     b.Navigation("Funciones");
                 });

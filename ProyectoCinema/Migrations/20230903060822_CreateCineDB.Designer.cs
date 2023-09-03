@@ -12,8 +12,8 @@ using ProyectoCinema;
 namespace ProyectoCinema.Migrations
 {
     [DbContext(typeof(CinemaContext))]
-    [Migration("20230827020623_CreateDB")]
-    partial class CreateDB
+    [Migration("20230903060822_CreateCineDB")]
+    partial class CreateCineDB
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

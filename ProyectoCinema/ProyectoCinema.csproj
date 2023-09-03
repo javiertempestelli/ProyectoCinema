@@ -8,8 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-
-=======
     <Compile Remove="DataLoading\**" />
     <Compile Remove="Funcionalidades\**" />
     <EmbeddedResource Remove="DataLoading\**" />
@@ -20,18 +18,19 @@
 
   <ItemGroup>
 
-=======
-    <PackageReference Include="EntityFramework" Version="6.4.4" />
->>>>>>> 454a8e4ca58485ea47d86b894da778acdabdce9e
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.10" />
->>>>>>> Stashed changes
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.10">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Vista\" />
   </ItemGroup>
 
 </Project>
