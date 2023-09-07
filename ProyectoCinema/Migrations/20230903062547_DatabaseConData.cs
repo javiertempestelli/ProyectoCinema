@@ -386,7 +386,17 @@ namespace ProyectoCinema.Migrations
         }
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            //Eliminar tabla al salid o vaciarla
+            migrationBuilder.DropTable("Tickets"); // Elimina la tabla Tickets primero
+
+            // Elimina las relaciones antes de eliminar las tablas principales
+            migrationBuilder.DropForeignKey("FK_Funciones_Peliculas_PeliculaId", "Funciones");
+            migrationBuilder.DropForeignKey("FK_Funciones_Salas_SalaId", "Funciones");
+
+            // Elimina las tablas principales
+            migrationBuilder.DropTable("Funciones");
+            migrationBuilder.DropTable("Peliculas");
+            migrationBuilder.DropTable("Salas");
+            migrationBuilder.DropTable("Generos");
         }
     }
 }
