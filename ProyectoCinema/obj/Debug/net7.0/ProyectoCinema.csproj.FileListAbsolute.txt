@@ -1,3 +1,8 @@
+C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\ProyectoCinema.csproj.AssemblyReference.cache
+C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\ProyectoCinema.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\ProyectoCinema.AssemblyInfoInputs.cache
+C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\ProyectoCinema.AssemblyInfo.cs
+C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\ProyectoCinema.csproj.CoreCompileInputs.cache
 C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\ProyectoCinema.exe
 C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\ProyectoCinema.deps.json
 C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\ProyectoCinema.runtimeconfig.json
@@ -61,11 +66,12 @@ C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\runtim
 C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\ProyectoCinema.csproj.AssemblyReference.cache
-C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\ProyectoCinema.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\ProyectoCinema.AssemblyInfoInputs.cache
-C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\ProyectoCinema.AssemblyInfo.cs
-C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\ProyectoCinema.csproj.CoreCompileInputs.cache
+C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\Application.dll
+C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\Domain.dll
+C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\Infraestructure.dll
+C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\Infraestructure.pdb
+C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\Application.pdb
+C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\Domain.pdb
 C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\ProyectoCinema.csproj.CopyComplete
 C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\ProyectoCinema.dll
 C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\refint\ProyectoCinema.dll

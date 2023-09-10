@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JLBJZh0gX+YX60UljFtuKtfvokPPQpTa5ezpQmxH+PmgRi4Sds8JmWYEV8VMhCjQiK6NoiR01Yt197bh7lU3Rg==",
+  "dgSpecHash": "gVhH00e141W+uesUvbbSL5hHEh9+pbAZPEDs7L8nXsPsLgOEzJxlELSbg49OEj2ikPinbsEi/4g9lM02OlzTzA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Javi\\source\\repos\\ProyectoCinema\\ProyectoCinema\\ProyectoCinema.csproj",
   "expectedPackageFiles": [
@@ -78,12 +78,5 @@
     "C:\\Users\\Javi\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Javi\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\Javi\\source\\repos\\ProyectoCinema\\ProyectoCinema\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

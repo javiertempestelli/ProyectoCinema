@@ -34,4 +34,8 @@
     <Folder Include="Vista\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Infraestructure\Infraestructure.csproj" />
+  </ItemGroup>
+
 </Project>
