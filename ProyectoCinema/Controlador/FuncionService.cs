@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace ProyectoCinema
+namespace ProyectoCinema.Controlador
 {
     public class FuncionService
     {
@@ -8,7 +8,7 @@ namespace ProyectoCinema
 
         public FuncionService(CinemaContext context)
         {
-            this._context = context;
+            _context = context;
         }
         public void CreateFuncion(Funcion nuevaFuncion)
         {
@@ -48,7 +48,7 @@ namespace ProyectoCinema
 
         public string GetSalaNombreById(int salaId)
         {
-            
+
             var sala = _context.Salas.FirstOrDefault(s => s.SalaId == salaId);
 
             if (sala != null)
@@ -63,11 +63,11 @@ namespace ProyectoCinema
         }
 
         public string GetGeneroNombreById(int peliculaId)
-            {             
-                          /*  Recibe un generoId como parámetro y busca en la base de datos 
-                           *  el género correspondiente al ID proporcionado. 
-                           *  Si encuentra el género, devuelve su nombre; de lo contrario
-                           *  , devuelve un mensaje indicando que el género no se encontró. */
+        {
+            /*  Recibe un generoId como parámetro y busca en la base de datos 
+             *  el género correspondiente al ID proporcionado. 
+             *  Si encuentra el género, devuelve su nombre; de lo contrario
+             *  , devuelve un mensaje indicando que el género no se encontró. */
             var genero = _context.Generos.FirstOrDefault(g => g.GeneroId == peliculaId);
             if (genero != null)
 

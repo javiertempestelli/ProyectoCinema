@@ -26,6 +26,7 @@ namespace ProyectoCinema
                     Console.WriteLine("╚══════════════════════════════════════════╝");
                     Console.Write("Seleccione una opción: ");
 
+                    //Capturo el input por teclado
                     char option = Char.ToUpper(Console.ReadKey().KeyChar);
                     Console.WriteLine();
 
@@ -34,7 +35,8 @@ namespace ProyectoCinema
                         case '2':
 
 
-                            // El usuario seleccionó "2", así que listamos todas las funciones
+                            // El usuario presiona "2", se listan todas las funciones disponibles
+                            // Se instancia un objeto funcionService que sabe todo lo que puede hacer
                             var funciones = funcionService.GetAllFunciones();
 
                             if (funciones.Any())
@@ -44,8 +46,9 @@ namespace ProyectoCinema
                                     Console.WriteLine("--------------------------------------------");
                                     Console.WriteLine($"Funcion N°: {funcion.FuncionId}, Fecha: {funcion.Fecha.ToString("yyyy-MM-dd")}, Hora: {funcion.Horario.ToString("HH:mm:ss")}");
                                     string nombredelasala = funcionService.GetSalaNombreById(funcion.SalaId);
+                                    string nombredelgenero = funcionService.GetGeneroNombreById(funcion.PeliculaId);
                                     string nombredelapelicula = funcionService.GetPeliculaTituloById(funcion.PeliculaId);
-                                    Console.WriteLine($"{nombredelasala}, Película: {nombredelapelicula}");
+                                    Console.WriteLine($"{nombredelasala}, Película: {nombredelapelicula}, Genero: {nombredelgenero}");
                                     Console.WriteLine("--------------------------------------------");
                                 }
                             }
@@ -61,28 +64,46 @@ namespace ProyectoCinema
                             break;
 
                         case '1':
-                            // Registrar nueva función
+                            // Alta de una FUNCION
                             var nuevaFuncion = new Funcion();
 
                             Console.Write("Fecha (YYYY-MM-DD): ");
                             DateTime fecha;
-                            while (!DateTime.TryParse(Console.ReadLine(), out fecha))
+                            while (true)
                             {
-                                Console.WriteLine("Fecha no válida. Ingrese una fecha en el formato YYYY-MM-DD.");
-                                Console.Write("Fecha (YYYY-MM-DD): ");
+                                try
+                                {   //Si puedo parsear el input a DateTime, sale como fecha
+                                    if (DateTime.TryParse(Console.ReadLine(), out fecha))
+                                        break;
+                                    else
+                                        throw new Exception("Fecha no válida. Ingrese una fecha en el formato YYYY-MM-DD.");
+                                }
+                                catch (Exception ex)
+                                {
+                                    Console.WriteLine(ex.Message);
+                                }
                             }
                             nuevaFuncion.Fecha = fecha;
 
                             Console.Write("Horario (HH:mm:ss): ");
                             DateTime horario;
-                            while (!DateTime.TryParse(Console.ReadLine(), out horario))
+                            while (true)
                             {
-                                Console.WriteLine("Horario no válido. Ingrese un horario en el formato HH:mm:ss.");
-                                Console.Write("Horario (HH:mm:ss): ");
+                                try
+                                {
+                                    if (DateTime.TryParse(Console.ReadLine(), out horario))
+                                        break;
+                                    else
+                                        throw new Exception("Horario no válido. Ingrese un horario en el formato HH:mm:ss.");
+                                }
+                                catch (Exception ex)
+                                {
+                                    Console.WriteLine(ex.Message);
+                                }
                             }
                             nuevaFuncion.Horario = horario;
 
-                            // Obtener y mostrar una lista de películas disponibles
+                            // Listar las peliculas para su seleccion
                             var peliculas = funcionService.GetAllPeliculas();
                             Console.WriteLine("Peliculas disponibles:");
                             foreach (var pelicula in peliculas)
@@ -93,21 +114,24 @@ namespace ProyectoCinema
                             int peliculaId;
                             while (true)
                             {
-                                Console.Write("Seleccione la película (ID): ");
-                                if (int.TryParse(Console.ReadLine(), out peliculaId))
+                                try
                                 {
-                                    if (peliculas.Any(p => p.PeliculaId == peliculaId))
+                                    Console.Write("Seleccione la película (ID): ");
+                                    if (int.TryParse(Console.ReadLine(), out peliculaId))
                                     {
-                                        break;
+                                        if (peliculas.Any(p => p.PeliculaId == peliculaId))
+                                            break;
+                                        else
+                                            throw new Exception("ID de película no válido. Seleccione un ID válido.");
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ID de película no válido. Seleccione un ID válido.");
+                                        throw new Exception("ID de película no válido. Ingrese un número.");
                                     }
                                 }
-                                else
+                                catch (Exception ex)
                                 {
-                                    Console.WriteLine("ID de película no válido. Ingrese un número.");
+                                    Console.WriteLine(ex.Message);
                                 }
                             }
                             nuevaFuncion.PeliculaId = peliculaId;
@@ -147,8 +171,11 @@ namespace ProyectoCinema
                             Console.WriteLine($"Fecha: {nuevaFuncion.Fecha.ToString("yyyy-MM-dd")}, Horario: {nuevaFuncion.Horario.ToString("HH:mm:ss")}");
                             string peliculaTitulo = funcionService.GetPeliculaTituloById(nuevaFuncion.PeliculaId);
                             string salaNombre= funcionService.GetSalaNombreById(nuevaFuncion.SalaId);
-                            Console.WriteLine($"Película: {peliculaTitulo}, Sala: {nuevaFuncion.SalaId}");
+                            string generoNombre = funcionService.GetGeneroNombreById(nuevaFuncion.PeliculaId);
+                            Console.WriteLine($"Película: {peliculaTitulo}, Genero: {generoNombre}, Sala: {salaNombre}");
                             Console.WriteLine("--------------------------------------------");
+
+                            // Se debe confirmar el alta con un resumen de los elementos seleccionados
 
                             char confirmacion;
 
@@ -174,8 +201,33 @@ namespace ProyectoCinema
 
 
                             break;
+
+                        case '3':
+                            // Listar funciones por día y/o título de película
+                            Console.Write("Ingrese la fecha (YYYY-MM-DD) (deje en blanco para listar todas las fechas): ");
+                            string fechaStr = Console.ReadLine();
+                            DateTime? fechaFiltro = null;
+
+                            if (!string.IsNullOrEmpty(fechaStr) && DateTime.TryParse(fechaStr, out DateTime fechaSeleccionada))
+                            {
+                                fechaFiltro = fechaSeleccionada;
+                            }
+
+                            Console.Write("Ingrese el título de la película (deje en blanco para listar todas las películas): ");
+                            string tituloPeliculaFiltro = Console.ReadLine();
+                            
+                            var funcionesFiltradas = funcionService.GetFuncionesPorFechaYPelicula(fechaFiltro, tituloPeliculaFiltro);
+
+                            foreach (var funcion in funcionesFiltradas)
+                            {
+                                Console.WriteLine($"ID: {funcion.FuncionId}, Fecha: {funcion.Fecha}, Hora: {funcion.Horario}");
+                                Console.WriteLine($"Pelicula: {funcion.Pelicula.Titulo}, Sala: {funcion.Sala.Nombre}");
+                                // Muestra otros detalles de la función según tu modelo de datos
+                            }
+                            break;
                     }
-                    
+
+
 
                 }
             }
