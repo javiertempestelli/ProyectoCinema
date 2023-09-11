@@ -21,6 +21,7 @@ namespace ProyectoCinema
                     Console.WriteLine("║                                          ║");
                     Console.WriteLine("║  1. Cargar una nueva 'funcion'           ║");
                     Console.WriteLine("║  2. Ver todas las funciones              ║");
+                    Console.WriteLine("║  3. Buscar por dia/pelicula              ║");
                     Console.WriteLine("║                                          ║");
                     Console.WriteLine("║  Presione 'Q' para salir                 ║");
                     Console.WriteLine("╚══════════════════════════════════════════╝");

@@ -63,24 +63,34 @@ namespace ProyectoCinema
         }
 
         public string GetGeneroNombreById(int peliculaId)
-            {             
-                          /*  Recibe un generoId como parámetro y busca en la base de datos 
-                           *  el género correspondiente al ID proporcionado. 
-                           *  Si encuentra el género, devuelve su nombre; de lo contrario
-                           *  , devuelve un mensaje indicando que el género no se encontró. */
-            var genero = _context.Generos.FirstOrDefault(g => g.GeneroId == peliculaId);
-            if (genero != null)
+        {
+            /* Recibe un generoId como parámetro y busca en la base de datos 
+            el género correspondiente al ID proporcionado. 
+            Si encuentra el género, devuelve su nombre; de lo contrario
+            , devuelve un mensaje indicando que el género no se encontró. */
+            var pelicula = _context.Peliculas.FirstOrDefault(p => p.PeliculaId == peliculaId);
 
+            if (pelicula != null)
             {
-                return genero.Nombre;
+                var genero = _context.Generos.FirstOrDefault(g => g.GeneroId == pelicula.GeneroId);
+
+                if (genero != null)
+                {
+                    return genero.Nombre;
+                }
+                else
+                {
+                    // Manejar el caso en el que el ID del género no existe
+                    return "¿Género NULL?";
+                }
             }
             else
             {
-                // Manejar el caso en el que el ID de la sala no existe
-                return "¿Genero NULL?";
+                // Manejar el caso en el que el ID de la película no existe
+                return "¿Película NULL?";
             }
-
         }
+
 
         public List<Funcion> GetFuncionesPorFechaYPelicula(DateTime? fecha, string tituloPelicula)
         {
