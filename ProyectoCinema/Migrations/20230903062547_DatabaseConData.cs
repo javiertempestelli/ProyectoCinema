@@ -98,7 +98,7 @@ namespace ProyectoCinema.Migrations
                         principalColumn: "SalaId",
                         onDelete: ReferentialAction.Cascade);
                 });
-            
+
             // Se crea la tabla TICKETS
             migrationBuilder.CreateTable(
                 name: "Tickets",
@@ -224,26 +224,26 @@ namespace ProyectoCinema.Migrations
             migrationBuilder.InsertData(
                 table: "Peliculas",
                 columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
-                values: new object[] {  "El Aura",
-                                        "Un hombre con epilepsia comienza a vivir una doble vida, involucrándose en un peligroso robo en la Patagonia argentina.",
-                                        "https://es.web.img3.acsta.net/r_1920_1080/medias/nmedia/18/72/09/92/19153236.jpg",
-                                        "https://youtu.be/viV-OC4bpOw?si=guzx2kgRN9YcgXn6	" ,
+                values: new object[] {  "Megalodón 2: La fosa",
+                                        "Después de detectar un aumento de actividad en una fosa marina de gran profundidad, Jonas Taylor (Jason Statham) y su equipo tendrán que enfrentarse a un depredador ancestral",
+                                        "https://es.web.img2.acsta.net/c_310_420/pictures/23/05/09/10/42/0347977.jpg",
+                                        "https://youtu.be/7wuK5PhzcNY?si=iH8OrEpFTkDMamrw" ,
                                         "1"});
 
             migrationBuilder.InsertData(
                 table: "Peliculas",
                 columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
-                values: new object[] {  "Carancho",
-                                        "Un abogado sin escrúpulos se involucra en un oscuro mundo de accidentes de tráfico y corrupción en busca de dinero fácil.",
-                                        "https://es.web.img3.acsta.net/r_1920_1080/medias/nmedia/18/72/09/92/19153236.jpg",
-                                        "https://youtu.be/viV-OC4bpOw?si=guzx2kgRN9YcgXn6	" ,
+                values: new object[] {  "Gran Turismo",
+                                        "Basada en la historia real de Jann Mardenborough, un chaval aficionado a los videojuegos de carreras que sueña con ser piloto profesional y que empieza a entrenar para aprender a conducir en un circuito real donde competirá para cumplir su sueño.",
+                                        "https://es.web.img2.acsta.net/c_310_420/pictures/23/05/03/14/13/0249485.jpg",
+                                        "https://youtu.be/f5IRCGKZgJY?si=Q9UWEFByyTuBljqc" ,
                                         "1"});
             migrationBuilder.InsertData(
                 table: "Peliculas",
                 columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
                 values: new object[] {  "El secreto de sus ojos",
                                         "Un exagente judicial busca la verdad en un antiguo caso de asesinato mientras enfrenta su propio pasado.",
-                                        "https://es.web.img3.acsta.net/r_1920_1080/medias/nmedia/18/72/09/92/19153236.jpg",
+                                        "https://es.web.img2.acsta.net/c_310_420/medias/nmedia/18/72/09/92/19153236.jpg",
                                         "https://youtu.be/viV-OC4bpOw?si=guzx2kgRN9YcgXn6	" ,
                                         "2"});
             migrationBuilder.InsertData(
@@ -251,7 +251,7 @@ namespace ProyectoCinema.Migrations
                 columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
                 values: new object[] {  "Relatos Salvajes",
                                         "Diversas historias exploran los límites de la sociedad y el comportamiento humano en situaciones extremas.",
-                                        "https://es.web.img3.acsta.net/r_1920_1080/medias/nmedia/18/72/09/92/19153236.jpg",
+                                        "https://es.web.img3.acsta.net/c_310_420/pictures/14/11/17/11/15/381594.jpg",
                                         "https://youtu.be/viV-OC4bpOw?si=guzx2kgRN9YcgXn6	" ,
                                         "2"});
             migrationBuilder.InsertData(
@@ -337,52 +337,52 @@ namespace ProyectoCinema.Migrations
             migrationBuilder.InsertData(
                table: "Peliculas",
                columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
-               values: new object[] {  "Tango",
-                                        "Una película que celebra el tango argentino y su impacto en la cultura del país a lo largo de las décadas.",
-                                        "https://es.web.img3.acsta.net/r_1920_1080/medias/nmedia/18/72/09/92/19153236.jpg",
-                                        "https://youtu.be/viV-OC4bpOw?si=guzx2kgRN9YcgXn6	" ,
+               values: new object[] {  "La La Land",
+                                        "Mia, una joven aspirante a actriz que trabaja como camarera mientras acude a castings, y Sebastian, un pianista de jazz que se gana la vida tocando en sórdidos tugurios, se enamoran, pero su gran ambición por llegar a la cima en sus carreras artísticas amenaza con separarlos.",
+                                        "https://pics.filmaffinity.com/la_la_land-262021831-mmed.jpg",
+                                        "https://youtu.be/0pdqf4P9MB8?si=zic1kY_1HN3zVE28" ,
                                         "8"});
             migrationBuilder.InsertData(
                table: "Peliculas",
                columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
                values: new object[] {  "Esperando la Carroza",
                                         "Una comedia musical que sigue las desventuras de una familia disfuncional durante el funeral de la abuela.",
-                                        "https://es.web.img3.acsta.net/r_1920_1080/medias/nmedia/18/72/09/92/19153236.jpg",
-                                        "https://youtu.be/viV-OC4bpOw?si=guzx2kgRN9YcgXn6	" ,
+                                        "https://pics.filmaffinity.com/esperando_la_carroza-675954190-mmed.jpg",
+                                        "https://youtu.be/KIgOuEPQZsU?si=UUb2Wru_MiFzUMeT" ,
                                         "8"});
             migrationBuilder.InsertData(
                table: "Peliculas",
                columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
                values: new object[] {  "El Método",
                                         "Un grupo de aspirantes a ejecutivos compite brutalmente por un codiciado puesto de trabajo en una entrevista de selección.",
-                                        "https://es.web.img3.acsta.net/r_1920_1080/medias/nmedia/18/72/09/92/19153236.jpg",
-                                        "https://youtu.be/viV-OC4bpOw?si=guzx2kgRN9YcgXn6	" ,
+                                        "https://pics.filmaffinity.com/el_metodo-411717926-mmed.jpg",
+                                        "https://youtu.be/kkqpiImZ5ko?si=uCOWJrypBDUHji2D" ,
                                         "9"});
             migrationBuilder.InsertData(
                table: "Peliculas",
                columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
                values: new object[] {  "Relaciones Peligrosas",
                                         "Un psicólogo se ve involucrado en un peligroso juego de seducción con una enigmática paciente.",
-                                        "https://es.web.img3.acsta.net/r_1920_1080/medias/nmedia/18/72/09/92/19153236.jpg",
-                                        "https://youtu.be/viV-OC4bpOw?si=guzx2kgRN9YcgXn6	" ,
+                                        "https://pics.filmaffinity.com/open_marriage_to_have_and_to_kill-372578448-mmed.jpg",
+                                        "https://youtu.be/OQFGYEVsLQU?si=e-lvJDqYuTr7owOY" ,
                                         "9"});
             migrationBuilder.InsertData(
                table: "Peliculas",
                columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
                values: new object[] {  "Terrified",
                                         "Una serie de eventos aterradores afecta a una comunidad, y un equipo de investigadores busca respuestas sobrenaturales.",
-                                        "https://es.web.img3.acsta.net/r_1920_1080/medias/nmedia/18/72/09/92/19153236.jpg",
-                                        "https://youtu.be/viV-OC4bpOw?si=guzx2kgRN9YcgXn6	" ,
+                                        "https://pics.filmaffinity.com/aterrados-800169699-mmed.jpg",
+                                        "https://youtu.be/oUmw0tRytDc?si=pUYyYyoXaFmMNTNq" ,
                                         "10"});
             migrationBuilder.InsertData(
                table: "Peliculas",
                columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
                values: new object[] {  "El Espinazo del Diablo",
                                         "En un orfanato durante la Guerra Civil Española, un niño se enfrenta a sucesos paranormales y oscuros secretos.",
-                                        "https://es.web.img3.acsta.net/r_1920_1080/medias/nmedia/18/72/09/92/19153236.jpg",
-                                        "https://youtu.be/viV-OC4bpOw?si=guzx2kgRN9YcgXn6	" ,
+                                        "https://es.web.img2.acsta.net/c_310_420/medias/nmedia/18/82/09/38/19598918.jpg",
+                                        "https://youtu.be/c3gRqYu5olY?si=21jn-0njwEEt692a" ,
                                         "10"});
- 
+
         }
         protected override void Down(MigrationBuilder migrationBuilder)
         {

@@ -99,5 +99,23 @@ namespace ProyectoCinema.Controlador
             return query.ToList();
         }
 
+        public List<Funcion> GetFuncionesPorFecha(DateTime fecha)
+        {
+            IQueryable<Funcion> query = _context.Funciones.Include(f => f.Pelicula).Include(f => f.Sala);
+
+            query = query.Where(f => f.Fecha.Date == fecha.Date);
+
+            return query.ToList();
+        }
+
+        public List<Funcion> GetFuncionesPorPelicula(int peliculaId)
+        {
+            IQueryable<Funcion> query = _context.Funciones.Include(f => f.Pelicula).Include(f => f.Sala);
+
+            query = query.Where(f => f.PeliculaId == peliculaId);
+
+            return query.ToList();
+        }
+
     }
 }

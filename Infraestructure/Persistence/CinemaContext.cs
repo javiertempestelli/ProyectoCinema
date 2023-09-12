@@ -13,7 +13,7 @@ namespace ProyectoCinema
         public DbSet<Genero> Generos { get; set; }
         public DbSet<Pelicula> Peliculas { get; set; }
         public DbSet<Sala> Salas { get; set; }
-        public DbSet<Funcion> Funciones { get; set; }  
+        public DbSet<Funcion> Funciones { get; set; }
         public DbSet<Ticket> Tickets { get; set; }
 
 
@@ -52,5 +52,5 @@ namespace ProyectoCinema
         }
 
     }
- }
+}
 
