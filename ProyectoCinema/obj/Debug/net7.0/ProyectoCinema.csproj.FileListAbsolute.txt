@@ -78,3 +78,4 @@ C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\refint
 C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\ProyectoCinema.pdb
 C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\ProyectoCinema.genruntimeconfig.cache
 C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\obj\Debug\net7.0\ref\ProyectoCinema.dll
+C:\Users\Javi\source\repos\ProyectoCinema\ProyectoCinema\bin\Debug\net7.0\FluentAssertions.dll

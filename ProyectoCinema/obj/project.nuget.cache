@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "gVhH00e141W+uesUvbbSL5hHEh9+pbAZPEDs7L8nXsPsLgOEzJxlELSbg49OEj2ikPinbsEi/4g9lM02OlzTzA==",
+  "dgSpecHash": "cRbm8jejWwaUIljcwd3/N1D8Za58fJSa55sw8+OwLRkfoc485/tcThgkk6Nr7aYMnx0Fye+Tisuox5y11LGxUQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Javi\\source\\repos\\ProyectoCinema\\ProyectoCinema\\ProyectoCinema.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Javi\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Javi\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\Javi\\.nuget\\packages\\fluentassertions\\6.12.0\\fluentassertions.6.12.0.nupkg.sha512",
     "C:\\Users\\Javi\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Javi\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.10\\microsoft.aspnetcore.cryptography.internal.7.0.10.nupkg.sha512",
     "C:\\Users\\Javi\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.10\\microsoft.aspnetcore.cryptography.keyderivation.7.0.10.nupkg.sha512",

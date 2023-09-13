@@ -1,33 +1,28 @@
-﻿#nullable disable
-
+﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace ProyectoCinema.Migrations
+#nullable disable
+
+namespace Infraestructure.Migrations
 {
     /// <inheritdoc />
-    public partial class DatabaseConData : Migration
+    public partial class CreateDBconData : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-
-            // Se crea la tabla GENEROS
-
             migrationBuilder.CreateTable(
-            name: "Generos",
-            columns: table => new
-            {
-                GeneroId = table.Column<int>(type: "int", nullable: false)
-                 .Annotation("SqlServer:Identity", "1, 1"),
-                Nombre = table.Column<string>(type: "nvarchar(50)", nullable: false)
-            },
-            constraints: table =>
-             {
-                 table.PrimaryKey("PK_Generos", x => x.GeneroId);
-             });
-
-
-            // Se crea la tabla SALAS
+                name: "Generos",
+                columns: table => new
+                {
+                    GeneroId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Nombre = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Generos", x => x.GeneroId);
+                });
 
             migrationBuilder.CreateTable(
                 name: "Salas",
@@ -35,7 +30,7 @@ namespace ProyectoCinema.Migrations
                 {
                     SalaId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombre = table.Column<string>(type: "nvarchar(50)", nullable: false),
+                    Nombre = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Capacidad = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -43,21 +38,18 @@ namespace ProyectoCinema.Migrations
                     table.PrimaryKey("PK_Salas", x => x.SalaId);
                 });
 
-            // Se crea la tabla PELICULAS
-
             migrationBuilder.CreateTable(
                 name: "Peliculas",
                 columns: table => new
                 {
                     PeliculaId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Titulo = table.Column<string>(type: "nvarchar(50)", nullable: false),
-                    Sonopsis = table.Column<string>(type: "nvarchar(255)", nullable: false),
-                    Poster = table.Column<string>(type: "nvarchar(100)", nullable: false),
-                    Trailer = table.Column<string>(type: "nvarchar(100)", nullable: false),
+                    Titulo = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    Sonopsis = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
+                    Poster = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    Trailer = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     GeneroId = table.Column<int>(type: "int", nullable: false)
                 },
-                //Se vincula la FK
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Peliculas", x => x.PeliculaId);
@@ -68,20 +60,18 @@ namespace ProyectoCinema.Migrations
                         principalColumn: "GeneroId",
                         onDelete: ReferentialAction.Cascade);
                 });
-            // Se crea la tabla FUNCIONES
+
             migrationBuilder.CreateTable(
                 name: "Funciones",
                 columns: table => new
                 {
                     FuncionId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    SalaId = table.Column<int>(type: "int", nullable: false),
                     Fecha = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Horario = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    SalaId = table.Column<int>(type: "int", nullable: false),
                     PeliculaId = table.Column<int>(type: "int", nullable: false)
                 },
-
-                //Se vinculan las FK de FUNCIONES -> SALA; FUNCIONES -> PELICULA
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Funciones", x => x.FuncionId);
@@ -99,17 +89,14 @@ namespace ProyectoCinema.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            // Se crea la tabla TICKETS
             migrationBuilder.CreateTable(
                 name: "Tickets",
                 columns: table => new
                 {
                     TicketId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Usuario = table.Column<string>(type: "nvarchar(50)", nullable: false),
+                    Usuario = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     FuncionId = table.Column<int>(type: "int", nullable: false)
                 },
-
-                //Se vincula la FK de TICKETS -> FUNCION
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Tickets", x => x.TicketId);
@@ -120,8 +107,6 @@ namespace ProyectoCinema.Migrations
                         principalColumn: "FuncionId",
                         onDelete: ReferentialAction.Cascade);
                 });
-
-            // Se crean las relaciones entre las tablas
 
             migrationBuilder.CreateIndex(
                 name: "IX_Funciones_PeliculaId",
@@ -297,7 +282,7 @@ namespace ProyectoCinema.Migrations
             migrationBuilder.InsertData(
                table: "Peliculas",
                columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
-               values: new object[] {  "Héroes: Silencio y Rock & Roll", 
+               values: new object[] {  "Héroes: Silencio y Rock & Roll",
                                         "Documental que narra la historia de Héroes del Silencio desde la creación de la banda. Está contada en primera persona, y a través de ingente material videográfico y fotográfico, nunca visto antes",
                                         "https://pics.filmaffinity.com/heroes_silencio_y_rock_roll-172242554-mmed.jpg",
                                         "https://youtu.be/ZWEV4Tcvwmw?si=ne1qfeVsqzlRCKna" ,
@@ -383,19 +368,26 @@ namespace ProyectoCinema.Migrations
                                         "https://youtu.be/c3gRqYu5olY?si=21jn-0njwEEt692a" ,
                                         "10"});
         }
+
+
+
+        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable("Tickets"); // Elimina la tabla Tickets primero
+            migrationBuilder.DropTable(
+                name: "Tickets");
 
-            // Elimina las relaciones antes de eliminar las tablas principales
-            migrationBuilder.DropForeignKey("FK_Funciones_Peliculas_PeliculaId", "Funciones");
-            migrationBuilder.DropForeignKey("FK_Funciones_Salas_SalaId", "Funciones");
+            migrationBuilder.DropTable(
+                name: "Funciones");
 
-            // Elimina las tablas principales
-            migrationBuilder.DropTable("Funciones");
-            migrationBuilder.DropTable("Peliculas");
-            migrationBuilder.DropTable("Salas");
-            migrationBuilder.DropTable("Generos");
+            migrationBuilder.DropTable(
+                name: "Peliculas");
+
+            migrationBuilder.DropTable(
+                name: "Salas");
+
+            migrationBuilder.DropTable(
+                name: "Generos");
         }
     }
 }

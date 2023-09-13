@@ -45,7 +45,8 @@ public class CinemaContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=localhost;Database=CineDB;Trusted_Connection=True;TrustServerCertificate=True");
+        //        optionsBuilder.UseSqlServer("Server=localhost;Database=CineDB;Trusted_Connection=True;TrustServerCertificate=True");
+        optionsBuilder.UseSqlServer("Server=localhost;Database=CineDB;Trusted_Connection=True;TrustServerCertificate=True", b => b.MigrationsAssembly("Infraestructure"));
     }
 
 }

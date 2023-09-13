@@ -1,5 +1,5 @@
-﻿using ProyectoCinema.Controlador;
-
+﻿
+using ProyectoCinema.Controlador;
 
 
 namespace ProyectoCinema
