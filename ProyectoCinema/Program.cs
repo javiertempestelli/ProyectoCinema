@@ -36,7 +36,7 @@ namespace ProyectoCinema
                     switch (option)
                     {   // Listar funciones por película
                         case '2':
-                            
+
                             Console.WriteLine("Bienvenido al buscador de funciones por película");
 
                             // Traer todas las películas disponibles
@@ -270,21 +270,27 @@ namespace ProyectoCinema
                             {
                                 var funcionesFiltradas = funcionService.GetFuncionesPorFecha(fechaFiltro.Value);
 
-                                foreach (var funcion in funcionesFiltradas)
+                                if (funcionesFiltradas.Any())
                                 {
-                                    Console.WriteLine("--------------------------------------------");
-                                    Console.WriteLine($"Funcion N°: {funcion.FuncionId}, Fecha: {funcion.Fecha.ToString("yyyy-MM-dd")}, Hora: {funcion.Horario.ToString("HH:mm:ss")}");
-                                    Console.WriteLine($"Pelicula: {funcion.Pelicula.Titulo}, Sala: {funcion.Sala.Nombre}");
-                                    string nombredelasala = funcionService.GetSalaNombreById(funcion.SalaId);
-                                    string nombredelgenero = funcionService.GetGeneroNombreById(funcion.PeliculaId);
-                                    string nombredelapelicula = funcionService.GetPeliculaTituloById(funcion.PeliculaId);
-                                    Console.WriteLine($"{nombredelasala}, Película: {nombredelapelicula}, Genero: {nombredelgenero}");
-                                    Console.WriteLine("--------------------------------------------");
-
+                                    foreach (var funcion in funcionesFiltradas)
+                                    {
+                                        Console.WriteLine("--------------------------------------------");
+                                        Console.WriteLine($"Funcion N°: {funcion.FuncionId}, Fecha: {funcion.Fecha.ToString("yyyy-MM-dd")}, Hora: {funcion.Horario.ToString("HH:mm:ss")}");
+                                        Console.WriteLine($"Pelicula: {funcion.Pelicula.Titulo}, Sala: {funcion.Sala.Nombre}");
+                                        string nombredelasala = funcionService.GetSalaNombreById(funcion.SalaId);
+                                        string nombredelgenero = funcionService.GetGeneroNombreById(funcion.PeliculaId);
+                                        string nombredelapelicula = funcionService.GetPeliculaTituloById(funcion.PeliculaId);
+                                        Console.WriteLine($"{nombredelasala}, Película: {nombredelapelicula}, Genero: {nombredelgenero}");
+                                        Console.WriteLine("--------------------------------------------");
+                                    }
                                 }
+                                else
+                                {
+                                    Console.WriteLine("No hay funciones disponibles para la fecha seleccionada.");
+                                }
+
                                 Console.WriteLine("Presione cualquier tecla para volver al menú principal...");
                                 Console.ReadKey();
-
                             }
                             else
                             {
@@ -292,11 +298,7 @@ namespace ProyectoCinema
                             }
 
                             break;
-
                     }
-
-
-
                 }
             }
         }
