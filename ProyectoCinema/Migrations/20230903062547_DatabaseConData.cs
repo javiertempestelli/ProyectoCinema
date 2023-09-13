@@ -241,98 +241,98 @@ namespace ProyectoCinema.Migrations
             migrationBuilder.InsertData(
                 table: "Peliculas",
                 columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
-                values: new object[] {  "El secreto de sus ojos",
-                                        "Un exagente judicial busca la verdad en un antiguo caso de asesinato mientras enfrenta su propio pasado.",
-                                        "https://es.web.img2.acsta.net/c_310_420/medias/nmedia/18/72/09/92/19153236.jpg",
-                                        "https://youtu.be/viV-OC4bpOw?si=guzx2kgRN9YcgXn6	" ,
+                values: new object[] {  "Harry Potter y la piedra filosofal",
+                                        "El día en que cumple once años, Harry Potter se entera de que es hijo de dos destacados hechiceros, de los que ha heredado poderes mágicos. En la escuela Hogwarts de Magia y Hechicería, donde se educa con otros niños que también tienen poderes especiales, aprenderá todo lo necesario para ser mago.",
+                                        "https://pics.filmaffinity.com/harry_potter_and_the_sorcerer_s_stone-154820574-mmed.jpg",
+                                        "https://youtu.be/ZgrCZVjPg9g?si=i5faNObjPjxipKeU" ,
                                         "2"});
             migrationBuilder.InsertData(
                 table: "Peliculas",
                 columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
-                values: new object[] {  "Relatos Salvajes",
-                                        "Diversas historias exploran los límites de la sociedad y el comportamiento humano en situaciones extremas.",
-                                        "https://es.web.img3.acsta.net/c_310_420/pictures/14/11/17/11/15/381594.jpg",
-                                        "https://youtu.be/viV-OC4bpOw?si=guzx2kgRN9YcgXn6	" ,
+                values: new object[] {  "Jurassic Park",
+                                        "El multimillonario John Hammond consigue hacer realidad su sueño de clonar dinosaurios del Jurásico y crear con ellos un parque temático en una isla remota. Antes de abrirlo al público, invita a una pareja de eminentes científicos y a un matemático para que comprueben la viabilidad del proyecto.",
+                                        "https://pics.filmaffinity.com/jurassic_park-187298880-mmed.jpg",
+                                        "https://youtu.be/dLDkNge_AhE?si=7ni1abXeAzJ_dMnO" ,
                                         "2"});
             migrationBuilder.InsertData(
                 table: "Peliculas",
                 columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
-                values: new object[] {  "Los Simuladores: El Hombre Nuclear",
-                                        "Un equipo de especialistas en solucionar problemas a través de engaños se enfrenta a un desafío tecnológico.",
-                                        "https://es.web.img3.acsta.net/r_1920_1080/medias/nmedia/18/72/09/92/19153236.jpg",
-                                        "https://youtu.be/viV-OC4bpOw?si=guzx2kgRN9YcgXn6	" ,
+                values: new object[] {  "Volver al futuro",
+                                        "El adolescente Marty McFly es amigo de Doc, un científico al que todos toman por loco. Cuando Doc crea una máquina para viajar en el tiempo, un error fortuito hace que Marty llegue a 1955, año en el que sus futuros padres aún no se habían conocido. ",
+                                        "https://pics.filmaffinity.com/back_to_the_future-100822308-mmed.jpg",
+                                        "https://youtu.be/GM6_MHRc4Xo?si=ksmsX9To6ChUw1yo" ,
                                         "3"});
             migrationBuilder.InsertData(
                 table: "Peliculas",
                 columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
-                values: new object[] {  "Moebius",
-                                        "En un mundo distópico, un científico descubre una forma de viajar en el tiempo, pero desencadena consecuencias imprevisibles.",
-                                        "https://es.web.img3.acsta.net/r_1920_1080/medias/nmedia/18/72/09/92/19153236.jpg",
-                                        "https://youtu.be/viV-OC4bpOw?si=guzx2kgRN9YcgXn6	" ,
+                values: new object[] {  "Matrix",
+                                        "Thomas Anderson es un brillante programador de una respetable compañía de software. Pero fuera del trabajo es Neo, un hacker que un día recibe una misteriosa visita",
+                                        "https://pics.filmaffinity.com/the_matrix-155050517-mmed.jpg",
+                                        "https://youtu.be/m8e-FF8MsqU?si=HLIp75IyoJXYkZSQ" ,
                                         "3"});
             migrationBuilder.InsertData(
                 table: "Peliculas",
                 columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
                 values: new object[] {  "Un Novio para mi Mujer",
                                         "Un hombre contrata a un seductor profesional para que seduzca a su esposa y la haga pedirle el divorcio.",
-                                        "https://es.web.img3.acsta.net/r_1920_1080/medias/nmedia/18/72/09/92/19153236.jpg",
-                                        "https://youtu.be/viV-OC4bpOw?si=guzx2kgRN9YcgXn6	" ,
+                                        "https://pics.filmaffinity.com/un_novio_para_mi_mujer-757863751-mmed.jpg",
+                                        "https://youtu.be/l0S_CtrkgnU?si=S7qn-gK6ibyWxxdG" ,
                                         "4"});
             migrationBuilder.InsertData(
                table: "Peliculas",
                columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
-               values: new object[] {  "Nueve Reinas",
-                                        "Dos estafadores se unen para realizar una serie de engaños, pero nada es lo que parece en este juego de astucia.",
-                                        "https://es.web.img3.acsta.net/r_1920_1080/medias/nmedia/18/72/09/92/19153236.jpg",
-                                        "https://youtu.be/viV-OC4bpOw?si=guzx2kgRN9YcgXn6	" ,
+               values: new object[] {  "Déjala correr",
+                                        "Un repartidor de pizzas veinteañero organiza una cena en su casa para conquistar a una chica algo mayor que él. Con la presencia de otros amigos, el encuentro se convierte en una sucesión de enredos que el protagonista trata de arreglar cuando descubre accidentalmente que puede manipular el paso del tiempo a su antojo mediante el botón de rebobinado de una videocámara.",
+                                        "https://pics.filmaffinity.com/dejala_correr-164728813-mmed.jpg",
+                                        "https://youtu.be/R3NUakdiIhM?si=n-GZ-VSF0RBTzMAm" ,
                                         "4"});
             migrationBuilder.InsertData(
                table: "Peliculas",
                columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
                values: new object[] {  "Favio: Crónica de un Director",
                                         "Un retrato íntimo de Leonardo Favio, un legendario director argentino, y su influencia en la cultura cinematográfica.",
-                                        "https://es.web.img3.acsta.net/r_1920_1080/medias/nmedia/18/72/09/92/19153236.jpg",
-                                        "https://youtu.be/viV-OC4bpOw?si=guzx2kgRN9YcgXn6	" ,
+                                        "https://pics.filmaffinity.com/favio_cronica_de_un_director-437828549-mmed.jpg",
+                                        "https://youtu.be/-4LudLKf7cY?si=esjZt77H2Khl4LXT" ,
                                         "5"});
             migrationBuilder.InsertData(
                table: "Peliculas",
                columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
-               values: new object[] {  "El Ciudadano Ilustre",
-                                        "Un escritor argentino galardonado regresa a su pueblo natal, desencadenando una serie de eventos sorprendentes.",
-                                        "https://es.web.img3.acsta.net/r_1920_1080/medias/nmedia/18/72/09/92/19153236.jpg",
-                                        "https://youtu.be/viV-OC4bpOw?si=guzx2kgRN9YcgXn6	" ,
+               values: new object[] {  "Héroes: Silencio y Rock & Roll", 
+                                        "Documental que narra la historia de la agrupación musical Héroes del Silencio desde la creación de la banda. Está contada en primera persona por Enrique Bunbury, Juan Valdivia, Pedro Andreu y Joaquín Cardiel, y a través de ingente material videográfico y fotográfico, nunca visto antes",
+                                        "https://pics.filmaffinity.com/heroes_silencio_y_rock_roll-172242554-mmed.jpg",
+                                        "https://youtu.be/ZWEV4Tcvwmw?si=ne1qfeVsqzlRCKna" ,
                                         "5"});
             migrationBuilder.InsertData(
                table: "Peliculas",
                columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
                values: new object[] {  "El Hijo de la Novia",
                                         "Un restaurante familiar enfrenta crisis mientras el protagonista lucha por reconciliarse con su madre y su pasado.",
-                                        "https://es.web.img3.acsta.net/r_1920_1080/medias/nmedia/18/72/09/92/19153236.jpg",
-                                        "https://youtu.be/viV-OC4bpOw?si=guzx2kgRN9YcgXn6	" ,
+                                        "https://pics.filmaffinity.com/el_hijo_de_la_novia-570644260-mmed.jpg",
+                                        "https://youtu.be/AoAU_eeSq4o?si=vj42P30ZTvxmxaV9" ,
                                         "6"});
             migrationBuilder.InsertData(
                table: "Peliculas",
                columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
-               values: new object[] {  "Cautiva",
-                                        "Una joven secuestrada durante su infancia trata de reintegrarse en la sociedad después de ser liberada.",
-                                        "https://es.web.img3.acsta.net/r_1920_1080/medias/nmedia/18/72/09/92/19153236.jpg",
-                                        "https://youtu.be/viV-OC4bpOw?si=guzx2kgRN9YcgXn6	" ,
+               values: new object[] {  "El discurso del Rey",
+                                        "El duque de York se convirtió en rey de Inglaterra con el nombre de Jorge VI (1936-1952), tras la abdicación de su hermano mayor, Eduardo VIII. Su tartamudez, que constituía un gran inconveniente para el ejercicio de sus funciones.",
+                                        "https://pics.filmaffinity.com/the_king_s_speech-997653906-mmed.jpg",
+                                        "https://youtu.be/KpssjoKZK1w?si=OdUMh27tJOM6cL3q" ,
                                         "6"});
             migrationBuilder.InsertData(
                table: "Peliculas",
                columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
-               values: new object[] {  "La Leyenda de Nahuelito",
-                                        "Una película animada que narra la misteriosa historia de Nahuelito, el monstruo del lago Nahuel Huapi.",
-                                        "https://es.web.img3.acsta.net/r_1920_1080/medias/nmedia/18/72/09/92/19153236.jpg",
-                                        "https://youtu.be/viV-OC4bpOw?si=guzx2kgRN9YcgXn6	" ,
+               values: new object[] {  "Dragon Ball Z: La resurrección de Freezer",
+                                        "Después de que Bills, el Dios de la destrucción, decidiera no destruir la Tierra, se vive una gran época de paz. Hasta que Sorbet y Tagoma, antiguos miembros de élite de la armada de Freezer, llegan a la Tierra con el objetivo de revivir a su líder por medio de las Bolas de Dragón. ",
+                                        "https://pics.filmaffinity.com/dragon_ball_z_fukkatsu_no_f-911759024-mmed.jpg",
+                                        "https://youtu.be/cD8Vv5bdmbI?si=xa3rXfyyfXcid6Yp" ,
                                         "7"});
             migrationBuilder.InsertData(
                table: "Peliculas",
                columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
-               values: new object[] {  "Juan y Eva",
-                                        "Una película que explora la vida de Eva Perón y su influencia en la política argentina, con elementos de fantasía.",
-                                        "https://es.web.img3.acsta.net/r_1920_1080/medias/nmedia/18/72/09/92/19153236.jpg",
-                                        "https://youtu.be/viV-OC4bpOw?si=guzx2kgRN9YcgXn6	" ,
+               values: new object[] {  "Dragon Ball Z: La batalla de los dioses",
+                                        "lgunos años después de la batalla con Majin Buu, Bils, el dios de la destrucción, encargado de mantener el equilibrio del universo, se ha despertado de un largo sueño. Al escuchar rumores sobre un saiyajin que ha vencido a Freezer, Bils parte a la búsqueda de Goku. ",
+                                        "https://pics.filmaffinity.com/doragon_boru_zetto_kami_to_kami_dragon_ball_z_battle_of_gods-627497955-mmed.jpg",
+                                        "https://youtu.be/pn0_qnfsrfc?si=ZU2l7eV2ZHKISQ1L" ,
                                         "7"});
             migrationBuilder.InsertData(
                table: "Peliculas",
@@ -382,7 +382,6 @@ namespace ProyectoCinema.Migrations
                                         "https://es.web.img2.acsta.net/c_310_420/medias/nmedia/18/82/09/38/19598918.jpg",
                                         "https://youtu.be/c3gRqYu5olY?si=21jn-0njwEEt692a" ,
                                         "10"});
-
         }
         protected override void Down(MigrationBuilder migrationBuilder)
         {
