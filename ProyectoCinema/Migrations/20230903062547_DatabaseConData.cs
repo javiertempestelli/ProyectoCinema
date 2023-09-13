@@ -19,7 +19,7 @@ namespace ProyectoCinema.Migrations
             {
                 GeneroId = table.Column<int>(type: "int", nullable: false)
                  .Annotation("SqlServer:Identity", "1, 1"),
-                Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                Nombre = table.Column<string>(type: "nvarchar(50)", nullable: false)
             },
             constraints: table =>
              {
@@ -35,7 +35,7 @@ namespace ProyectoCinema.Migrations
                 {
                     SalaId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Nombre = table.Column<string>(type: "nvarchar(50)", nullable: false),
                     Capacidad = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -51,10 +51,10 @@ namespace ProyectoCinema.Migrations
                 {
                     PeliculaId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Titulo = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Sonopsis = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Poster = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Trailer = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Titulo = table.Column<string>(type: "nvarchar(50)", nullable: false),
+                    Sonopsis = table.Column<string>(type: "nvarchar(255)", nullable: false),
+                    Poster = table.Column<string>(type: "nvarchar(100)", nullable: false),
+                    Trailer = table.Column<string>(type: "nvarchar(100)", nullable: false),
                     GeneroId = table.Column<int>(type: "int", nullable: false)
                 },
                 //Se vincula la FK
@@ -105,7 +105,7 @@ namespace ProyectoCinema.Migrations
                 columns: table => new
                 {
                     TicketId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Usuario = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Usuario = table.Column<string>(type: "nvarchar(50)", nullable: false),
                     FuncionId = table.Column<int>(type: "int", nullable: false)
                 },
 
@@ -234,7 +234,7 @@ namespace ProyectoCinema.Migrations
                 table: "Peliculas",
                 columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
                 values: new object[] {  "Gran Turismo",
-                                        "Basada en la historia real de Jann Mardenborough, un chaval aficionado a los videojuegos de carreras que sueña con ser piloto profesional y que empieza a entrenar para aprender a conducir en un circuito real donde competirá para cumplir su sueño.",
+                                        "Basada en la historia real de Jann Mardenborough, un chaval aficionado a los videojuegos de carreras que sueña con ser piloto profesional y que empieza a entrenar para aprender a conducir en un circuito donde competirá para cumplir su sueño.",
                                         "https://es.web.img2.acsta.net/c_310_420/pictures/23/05/03/14/13/0249485.jpg",
                                         "https://youtu.be/f5IRCGKZgJY?si=Q9UWEFByyTuBljqc" ,
                                         "1"});
@@ -242,7 +242,7 @@ namespace ProyectoCinema.Migrations
                 table: "Peliculas",
                 columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
                 values: new object[] {  "Harry Potter y la piedra filosofal",
-                                        "El día en que cumple once años, Harry Potter se entera de que es hijo de dos destacados hechiceros, de los que ha heredado poderes mágicos. En la escuela Hogwarts de Magia y Hechicería, donde se educa con otros niños que también tienen poderes especiales, aprenderá todo lo necesario para ser mago.",
+                                        "El día en que cumple once años, Harry Potter se entera de que es hijo de dos destacados hechiceros, de los que ha heredado poderes mágicos. En la escuela Hogwarts de Magia y Hechicería",
                                         "https://pics.filmaffinity.com/harry_potter_and_the_sorcerer_s_stone-154820574-mmed.jpg",
                                         "https://youtu.be/ZgrCZVjPg9g?si=i5faNObjPjxipKeU" ,
                                         "2"});
@@ -250,7 +250,7 @@ namespace ProyectoCinema.Migrations
                 table: "Peliculas",
                 columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
                 values: new object[] {  "Jurassic Park",
-                                        "El multimillonario John Hammond consigue hacer realidad su sueño de clonar dinosaurios del Jurásico y crear con ellos un parque temático en una isla remota. Antes de abrirlo al público, invita a una pareja de eminentes científicos y a un matemático para que comprueben la viabilidad del proyecto.",
+                                        "John Hammond consigue hacer realidad su sueño de clonar dinosaurios y crear con ellos un parque temático en una isla remota.",
                                         "https://pics.filmaffinity.com/jurassic_park-187298880-mmed.jpg",
                                         "https://youtu.be/dLDkNge_AhE?si=7ni1abXeAzJ_dMnO" ,
                                         "2"});
@@ -258,7 +258,7 @@ namespace ProyectoCinema.Migrations
                 table: "Peliculas",
                 columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
                 values: new object[] {  "Volver al futuro",
-                                        "El adolescente Marty McFly es amigo de Doc, un científico al que todos toman por loco. Cuando Doc crea una máquina para viajar en el tiempo, un error fortuito hace que Marty llegue a 1955, año en el que sus futuros padres aún no se habían conocido. ",
+                                        "El adolescente Marty McFly es amigo de Doc, un científico al que todos toman por loco. Cuando Doc crea una máquina para viajar en el tiempo, un error fortuito hace que Marty llegue a 1955. ",
                                         "https://pics.filmaffinity.com/back_to_the_future-100822308-mmed.jpg",
                                         "https://youtu.be/GM6_MHRc4Xo?si=ksmsX9To6ChUw1yo" ,
                                         "3"});
@@ -282,7 +282,7 @@ namespace ProyectoCinema.Migrations
                table: "Peliculas",
                columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
                values: new object[] {  "Déjala correr",
-                                        "Un repartidor de pizzas veinteañero organiza una cena en su casa para conquistar a una chica algo mayor que él. Con la presencia de otros amigos, el encuentro se convierte en una sucesión de enredos que el protagonista trata de arreglar cuando descubre accidentalmente que puede manipular el paso del tiempo a su antojo mediante el botón de rebobinado de una videocámara.",
+                                        "Un repartidor de pizzas veinteañero organiza una cena en su casa para conquistar a una chica algo mayor que él. El protagonista trata de arreglar cuando descubre que puede manipular el tiempo mediante el botón de rebobinado de una videocámara.",
                                         "https://pics.filmaffinity.com/dejala_correr-164728813-mmed.jpg",
                                         "https://youtu.be/R3NUakdiIhM?si=n-GZ-VSF0RBTzMAm" ,
                                         "4"});
@@ -298,7 +298,7 @@ namespace ProyectoCinema.Migrations
                table: "Peliculas",
                columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
                values: new object[] {  "Héroes: Silencio y Rock & Roll", 
-                                        "Documental que narra la historia de la agrupación musical Héroes del Silencio desde la creación de la banda. Está contada en primera persona por Enrique Bunbury, Juan Valdivia, Pedro Andreu y Joaquín Cardiel, y a través de ingente material videográfico y fotográfico, nunca visto antes",
+                                        "Documental que narra la historia de Héroes del Silencio desde la creación de la banda. Está contada en primera persona, y a través de ingente material videográfico y fotográfico, nunca visto antes",
                                         "https://pics.filmaffinity.com/heroes_silencio_y_rock_roll-172242554-mmed.jpg",
                                         "https://youtu.be/ZWEV4Tcvwmw?si=ne1qfeVsqzlRCKna" ,
                                         "5"});
@@ -322,7 +322,7 @@ namespace ProyectoCinema.Migrations
                table: "Peliculas",
                columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
                values: new object[] {  "Dragon Ball Z: La resurrección de Freezer",
-                                        "Después de que Bills, el Dios de la destrucción, decidiera no destruir la Tierra, se vive una gran época de paz. Hasta que Sorbet y Tagoma, antiguos miembros de élite de la armada de Freezer, llegan a la Tierra con el objetivo de revivir a su líder por medio de las Bolas de Dragón. ",
+                                        "Después de que Bills, decidiera no destruir la Tierra, se vive una gran época de paz. Hasta que, antiguos miembros de élite de Freezer, llegan a la Tierra con el objetivo de revivir a su líder",
                                         "https://pics.filmaffinity.com/dragon_ball_z_fukkatsu_no_f-911759024-mmed.jpg",
                                         "https://youtu.be/cD8Vv5bdmbI?si=xa3rXfyyfXcid6Yp" ,
                                         "7"});
@@ -330,15 +330,15 @@ namespace ProyectoCinema.Migrations
                table: "Peliculas",
                columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
                values: new object[] {  "Dragon Ball Z: La batalla de los dioses",
-                                        "lgunos años después de la batalla con Majin Buu, Bils, el dios de la destrucción, encargado de mantener el equilibrio del universo, se ha despertado de un largo sueño. Al escuchar rumores sobre un saiyajin que ha vencido a Freezer, Bils parte a la búsqueda de Goku. ",
-                                        "https://pics.filmaffinity.com/doragon_boru_zetto_kami_to_kami_dragon_ball_z_battle_of_gods-627497955-mmed.jpg",
+                                        "lgunos años después de la batalla con Majin Buu, Bils, el dios de la destrucción, encargado de mantener el equilibrio del universo, se ha despertado de un largo sueño. Bils parte a la búsqueda de Goku. ",
+                                        "https://es.web.img3.acsta.net/pictures/14/03/13/09/32/445665.jpg",
                                         "https://youtu.be/pn0_qnfsrfc?si=ZU2l7eV2ZHKISQ1L" ,
                                         "7"});
             migrationBuilder.InsertData(
                table: "Peliculas",
                columns: new[] { "Titulo", "Sonopsis", "Poster", "Trailer", "GeneroId" },
                values: new object[] {  "La La Land",
-                                        "Mia, una joven aspirante a actriz que trabaja como camarera mientras acude a castings, y Sebastian, un pianista de jazz que se gana la vida tocando en sórdidos tugurios, se enamoran, pero su gran ambición por llegar a la cima en sus carreras artísticas amenaza con separarlos.",
+                                        "Una joven aspirante a actriz que trabaja como camarera mientras acude a castings, y Sebastian, un pianista de jazz que se gana la vida tocando en sórdidos tugurios, se enamoran.",
                                         "https://pics.filmaffinity.com/la_la_land-262021831-mmed.jpg",
                                         "https://youtu.be/0pdqf4P9MB8?si=zic1kY_1HN3zVE28" ,
                                         "8"});

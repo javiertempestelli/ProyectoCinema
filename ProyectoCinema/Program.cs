@@ -1,5 +1,7 @@
 ﻿using ProyectoCinema.Controlador;
 
+
+
 namespace ProyectoCinema
 {
     public class Program
